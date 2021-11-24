@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JAVASCRIPT GAME DEVELOPMENT</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="tap box.css">
+</head>
+<body>
+
+  <a href="javascript:location.reload(true)"><button type = "button"> START </button> </a>
+
+  <h1>SCORE <span class="score">0</span></h1>
+  <button onClick="startGame()">PLAY</button>
+  <div class="game">  
+    <div class="space space1">
+      <div class="ball"></div>
+    </div>
+    <div class="space space2">
+      <div class="ball"></div>
+    </div>
+    <div class="space space3">
+      <div class="ball"></div>
+    </div>
+    <div class="space space4">
+      <div class="ball"></div>
+    </div>
+    <div class="space space5">
+      <div class="ball"></div>
+    </div>
+    <div class="space space6">
+      <div class="ball"></div>
+    </div>
+  </div>
+  <div class="hiscore">
+    <h2>LEADERBOARD</h2>
+    <br>
+    
+     <h3>Try to beat the highscore</h3>
+      
+     <button onClick="clearScores()">CLEAR </button>
+    
+    <table class="scoretable">
+    </table>
+  </div>
+<script src = "tap box .js"> </script>
+</body>
+</html>

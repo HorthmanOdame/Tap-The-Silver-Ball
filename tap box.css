@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background: url("4545.jpg");
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  
+  .score {
+    background: rgba(255,255,255,0.2);
+    padding: 0 3rem;
+    line-height: 1;
+    border-radius: 1rem;
+  }
+  
+  .game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .space {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .space:after {
+    display: grid;
+    background: url("4545.jpg")   bottom center no-repeat;
+    background-size: contain;
+    width: 100%;
+    height:70px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  }
+  
+  .ball {
+    background: url('ball.png') ;
+    background-size: cover;
+    position: absolute;
+    top: 100%;
+    width: 75%;
+    height: 75%;
+    
+  }
+  
+  .space.up .ball {
+    top: 0;
+  }
+  
+  button {
+    
+    
+    background-color:lightblue;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 0 15px 0;
+  }
+  
+  .scoretable {
+    position: absolute;
+    top: 100px;
+    right: -20px;
+    width: 350px;
+    font-size: 3rem;
+    margin: 10px auto;
+  }
+
+  h3{
+    color: black;
+  }
